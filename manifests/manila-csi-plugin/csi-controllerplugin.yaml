@@ -102,7 +102,7 @@ spec:
             type: DirectoryOrCreate
         - name: fwd-plugin-dir
           hostPath:
-            path: /var/lib/kubelet/plugins/FWD-NODEPLUGIN
+            path: /var/lib/kubelet/plugins/cephfs.csi.ceph.com
             type: Directory
         - name: pod-mounts
           hostPath:
