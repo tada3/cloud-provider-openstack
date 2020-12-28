@@ -106,7 +106,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: openstack-manila-csi-controllerplugin
-    namespace: default
+    namespace: vsfs-test
 roleRef:
   kind: Role
   name: openstack-manila-csi-controllerplugin
