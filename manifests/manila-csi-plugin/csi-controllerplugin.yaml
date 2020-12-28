@@ -85,13 +85,13 @@ spec:
             - name: FWD_CSI_ENDPOINT
               value: "unix:///var/lib/kubelet/plugins/FWD-NODEPLUGIN/csi.sock"
             - name: MANILA_SHARE_PROTO
-              value: "SHARE-PROTOCOL"
+              value: "CEPHFS"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: plugin-dir
               mountPath: /var/lib/kubelet/plugins/manila.csi.openstack.org
             - name: fwd-plugin-dir
-              mountPath: /var/lib/kubelet/plugins/FWD-NODEPLUGIN
+              mountPath: /var/lib/kubelet/plugins/cephfs.csi.ceph.com
             - name: pod-mounts
               mountPath: /var/lib/kubelet/pods
               mountPropagation: Bidirectional
